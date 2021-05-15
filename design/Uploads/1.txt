@@ -1,0 +1,17 @@
+Create table students(sid int primary key,sname char(20),dept char(20),age int);
+insert into students values(1,'harshith','CSE',20);
+insert into students values(2,'nani','ECE',21);
+insert into students values(3,'Venkata','CSE',23);
+insert into students values(4,'Ram','ECE',22);
+insert into students values(5,'Shyam','CSE',24);
+insert into students values(6,'lucky','ECE',22);
+select sname from students;
+select * from students --selects entire table ;
+update students set dept='EEE' where dept='ECE';
+select * from students;
+update students set dept='CSE';
+select * from students;
+delete from students where sid=4;
+select * from students;
+alter table students add cgpa int default 0;
+select * from students;
